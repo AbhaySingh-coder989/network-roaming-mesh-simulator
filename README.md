@@ -19,4 +19,4 @@ This model simulates a group of routers and one moving device. Currently, the si
 
 ## What it is (and isn't)
 
-It's a simulation. It is not real device firmware, and doesn't interact with Wi-Fi hardware, or the 802.11 standard itself. This code is intended to illustrate the decision making of the fix, not to replace real-time network protocols.
+This is just a simulation, not real device firmware.. It doesn't interact with Wi-Fi hardware or the 802.11 standard itself. This code is intended to illustrate the decision making of the fix, not to replace real-time network protocols.
