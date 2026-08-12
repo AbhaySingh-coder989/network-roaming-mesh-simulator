@@ -19,4 +19,7 @@ This model simulates a group of routers and one moving device. Currently, the si
 
 ## What it is (and isn't)
 
-This is just a simulation, not real device firmware.. It doesn't interact with Wi-Fi hardware or the 802.11 standard itself. This code is intended to illustrate the decision making of the fix, not to replace real-time network protocols.
+This is just a simulation, not real device firmware. It doesn't interact with Wi-Fi hardware or the 802.11 standard itself. This code is intended to illustrate the decision making of the fix, not to replace real-time network protocols.
+
+## Why I built this
+I'd have to notice the connection was dead, whether it be during a game or a download, then manually disconnect and reconnect just to get back online. Once I found out this was an actual, recognized problem called the "sticky client", I wanted to see if I could find a way to fix it myself. Finishing it is about more than solving that one annoyance, though; it's a way to test whether what I've learned in computer science actually holds up against a real problem, and to prove to myself I can find a solution to something I noticed on my own, not just something I was assigned.
