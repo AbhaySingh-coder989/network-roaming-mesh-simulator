@@ -27,7 +27,6 @@ public class Router
         {
             return 0.0;
         }
-
         return 100.0 * (1.0 - (distance / maxRange));
     }
 }
