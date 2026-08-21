@@ -5,11 +5,13 @@ public class NetworkGraph
 {
     private Map<String, List<String>> adjacencyList;
     private String gatewayId;
+
     public NetworkGraph(String gatewayId)
     {
         this.adjacencyList = new HashMap<>();
         this.gatewayId = gatewayId;
     }
+
     public void addNode(String ssid)
     {
         if(!adjacencyList.containsKey(ssid))
@@ -17,6 +19,7 @@ public class NetworkGraph
             adjacencyList.put(ssid, new ArrayList<>());
         }
     }
+
     public void connect(String ssid1, String ssid2)
     {
         if(adjacencyList.containsKey(ssid1) && adjacencyList.containsKey(ssid2))
@@ -25,6 +28,7 @@ public class NetworkGraph
             adjacencyList.get(ssid2).add(ssid1);
         }
     }
+
     public int getHopCountToGateway(String startSsid)
     {
         if(startSsid.equals(gatewayId))
@@ -44,6 +48,7 @@ public class NetworkGraph
             String current = queue.poll();
             int currentDist = distances.get(current);
             List<String> neighbors = adjacencyList.get(current);
+
             if(neighbors != null)
             {
                 for(String neighbor : neighbors)
@@ -62,6 +67,6 @@ public class NetworkGraph
                 }
             }
         }
-        return 9999;
+        return 9999; //pq will ignore
     }
 }

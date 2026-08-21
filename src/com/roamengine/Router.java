@@ -21,12 +21,12 @@ public class Router
 
     public double calculateSignalStrength(double deviceX, double deviceY)
     {
-        double distance=Math.sqrt(Math.pow(this.x - deviceX, 2) + Math.pow(this.y - deviceY, 2));
-
-        if (distance>=maxRange)
+        double distance = Math.sqrt(Math.pow(this.x - deviceX, 2) + Math.pow(this.y - deviceY, 2));
+        if(distance>=maxRange)
         {
             return 0.0;
         }
+
         return 100.0 * (1.0 - (distance / maxRange));
     }
 }
